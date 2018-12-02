@@ -2,9 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import App from './App';
+import App from './containers/App/App';
 import createStore from './store';
 
+// Styles
+import './style/_global.module.scss';
+
+// Store Redux
 const store = createStore();
 
 ReactDOM.render(

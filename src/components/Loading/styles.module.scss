@@ -1,0 +1,25 @@
+@import '../../style/colors.module';
+
+.wrapperLoading {
+	width: 100%;
+	height: calc(100vh - 60px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.loader {
+	height: 30px;
+	width: 20%;
+	text-align: center;
+	padding: 1em;
+	margin: 0 auto 1em;
+	display: inline-block;
+	vertical-align: top;
+}
+
+svg path,
+svg rect {
+	fill: $detailsColor;
+}
