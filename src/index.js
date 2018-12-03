@@ -7,6 +7,7 @@ import createStore from './store';
 
 // Styles
 import './style/_global.module.scss';
+import 'react-tagsinput/react-tagsinput.css';
 
 // Store Redux
 const store = createStore();

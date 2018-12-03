@@ -47,12 +47,14 @@ export const fetchingRepos = username => {
 		try {
 			dispatch(fetchingReposRequest());
 			const response = await fetchReposFromApi(username);
-			setInterval(() => {
+			setTimeout(() => {
 				dispatch(fetchingReposSuccess(response.data));
-			}, 2000);
+			}, 300);
 			return response.status;
 		} catch (error) {
 			dispatch(fetchingReposSuccess(error));
 		}
 	};
 };
+
+export const clearAll = () => ({ type: types.CLEAR_ALL });

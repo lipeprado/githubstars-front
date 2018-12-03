@@ -1,6 +1,12 @@
 .wrapperNavbar {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-between;
 	align-items: center;
 	height: 60px;
+	h4 {
+		cursor: pointer;
+		&:hover {
+			color: darken(#9baec8, 5%);
+		}
+	}
 }
